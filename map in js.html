@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="showusernames"></h1>
+    <script>
+
+
+        const users = [
+            {
+                name: "shazia",
+                usertype: "super Admin",
+                email: "shazia@gmail.com",
+                username: "web-Shazia",
+                phone: "7234897785",
+            },
+            {
+                name: "anisa",
+                usertype: "super Admin",
+                email: "anisa@gmail.com",
+                username: "web-anisa",
+                phone: "7234897785",
+            },
+            {
+                name: "noor",
+                usertype: "super Admin",
+                email: "noor@gmail.com",
+                username: "web-noor",
+                phone: "7234897785",
+            },
+            {
+                name: "aqdas",
+                usertype: "super Admin",
+                email: "aqdas@gmail.com",
+                username: "web-aqdas",
+                phone: "7234897785",
+            },
+
+
+        ];
+
+        const allUsers = users.map((singleUser) => singleUser.name);
+        //    console.log("All users are", allUsers);
+
+        document.getElementById("showusernames").innerHTML = allUsers[1];
+    </script>
+
+
+
+</body>
+
+</html>
